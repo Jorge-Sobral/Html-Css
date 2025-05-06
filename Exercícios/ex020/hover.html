@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+         @font-face {
+            font-family: 'Okami';
+            src: url('fonts/Okami.otf') format('opentype');
+            font-weight: lighter;
+            font-style: normal;
+        }
+        body {
+            font: normal 20px Okami
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: bisque;
+            background-color: chocolate;
+            width: 200px;
+        }
+
+        div:hover {
+            color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        se acender momo e gay
+        <p>Se aparecer momo e gay</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

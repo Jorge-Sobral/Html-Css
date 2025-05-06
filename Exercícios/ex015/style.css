@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+    body {
+        background-color: antiquewhite;
+    }
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        color: brown;
+        background-color: blanchedalmond;
+    }
+    p {
+        text-align: justify;
+    }
