@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background: black url(https://images.vexels.com/content/72688/preview/space-stars-background-b718c7.png) center center no-repeat fixed;
+    background-size: cover;
+
+    color: white;
+}
+
+header {
+    background-color: rgb(9, 6, 6);
+    border: solid;
+    border-color: rgb(255, 245, 6);
+    border-radius: 10px;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: rgb(9, 6, 6);
+    color: rgb(6, 155, 232);
+}
+
+section.imagem {
+    background-color: black;
+    color: rgb(250, 237, 29);
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.283);
+}
+
+footer > p {
+    background-color: rgb(9, 6, 6);
+    text-align: center;
+    padding: 10px;
+}
