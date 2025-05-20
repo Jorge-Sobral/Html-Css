@@ -48,11 +48,33 @@ section.normal {
 section.imagem {
     background-color: black;
     color: rgb(250, 237, 29);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background: black url(imagens/cavaleiros-do-zodiaco.jpg) center no-repeat;
+    background-size: cover;
+}
+
+section#img01 > p {
+    
+}
+
+section#img02 {
+    background: black url(imagens/61d7e9657e252371854ed681df08bc2995bd5e372f994a132e48bbf3d3a52dca._SX1080_FMjpg_.jpg) center no-repeat;
+    background-size: cover;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.283);
-    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.708);
+    display: block;
+    width: 60%;
+    max-width: 600px; 
+    text-shadow: 1px 1px 0px black;
+    padding: 10px;
+    box-sizing: border-box;
+    
 }
 
 footer > p {
