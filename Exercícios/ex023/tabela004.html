@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>
+            Jogos Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Jogos</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4">total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Mulheres</th>
+                <td>Julia</td>
+                <strong>
+                    <td>Okami</td>
+                </strong>
+                <td>Baldur's Gate 3</td>
+                <td>Cyberpunk 2077</td>
+            </tr>
+            <tr>
+                <td>thupapimunhano/fabíola</td>
+                <td>Stardew Valley</td>
+                <td>Little Nightmares</td>
+                <td>Sally Face</td>
+            </tr>
+            <tr>
+                <td>Vero</td>
+                <td>Monster Hunter Wilds</td>
+                <td>Cyberpunk 2077</td>
+                <td>Forspoken</td>
+            </tr>
+            <tr>
+                <td>Yuyu</td>
+                <td>Hollow Knight</td>
+                <td>Minecraft</td>
+                <td>Ena Dream BBQ</td>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Homes</th>
+                <td>Isnô</td>
+                <td>Slay the Princess</td>
+                <td>Tom Clancy's Rainbow Six Siege</td>
+                <td>Ultrakill</td>
+            </tr>
+            <tr>
+                <td>Arier</td>
+                <td>Cyberpunk 2077</td>
+                <td>Baldur's Gate 3</td>
+                <td>Sonic X Shadow Generations</td>
+            </tr>
+            <tr>
+                <td>Cuzado</td>
+                <td>Red Dead Redemption 2</td>
+                <td>Elden Ring</td>
+                <td>Dead Cells</td>
+            </tr>
+            <tr>
+                <td>Demsol</td>
+                <td>Zelda A Link to the Past</td>
+                <td>Sonic Unleashed</td>
+                <td>Call of Duty Black Ops 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

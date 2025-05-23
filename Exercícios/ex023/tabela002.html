@@ -8,11 +8,37 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        td#num1 {
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -24,32 +50,45 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 250px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45.919.049</td>
+                <td class="num">45.919.049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21.168.791</td>
+                <td class="num">21.168.791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17.264.943</td>
+                <td class="num">17.264.943</td>
             </tr>
+            
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td id="num1">0000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam rerum? Vitae eveniet dicta impedit possimus expedita autem aperiam temporibus veniam cumque quia. Voluptatem perferendis, incidunt inventore ullam reiciendis quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores temporibus neque, a aut nisi doloremque impedit animi porro vitae sequi saepe quo magnam asperiores veniam culpa incidunt repellat ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto quisquam itaque suscipit sequi earum inventore perspiciatis soluta labore quam fuga voluptatum, doloremque illum ratione, expedita quis est nisi impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, non sapiente repellendus unde cum vel, enim nostrum voluptates rem explicabo ad nihil modi in voluptas, ea aliquam nulla! Ut, itaque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam rerum? Vitae eveniet dicta impedit possimus expedita autem aperiam temporibus veniam cumque quia. Voluptatem perferendis, incidunt inventore ullam reiciendis quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores temporibus neque, a aut nisi doloremque impedit animi porro vitae sequi saepe quo magnam asperiores veniam culpa incidunt repellat ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto quisquam itaque suscipit sequi earum inventore perspiciatis soluta labore quam fuga voluptatum, doloremque illum ratione, expedita quis est nisi impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, non sapiente repellendus unde cum vel, enim nostrum voluptates rem explicabo ad nihil modi in voluptas, ea aliquam nulla! Ut, itaque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam rerum? Vitae eveniet dicta impedit possimus expedita autem aperiam temporibus veniam cumque quia. Voluptatem perferendis, incidunt inventore ullam reiciendis quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores temporibus neque, a aut nisi doloremque impedit animi porro vitae sequi saepe quo magnam asperiores veniam culpa incidunt repellat ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto quisquam itaque suscipit sequi earum inventore perspiciatis soluta labore quam fuga voluptatum, doloremque illum ratione, expedita quis est nisi impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, non sapiente repellendus unde cum vel, enim nostrum voluptates rem explicabo ad nihil modi in voluptas, ea aliquam nulla! Ut, itaque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam rerum? Vitae eveniet dicta impedit possimus expedita autem aperiam temporibus veniam cumque quia. Voluptatem perferendis, incidunt inventore ullam reiciendis quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores temporibus neque, a aut nisi doloremque impedit animi porro vitae sequi saepe quo magnam asperiores veniam culpa incidunt repellat ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto quisquam itaque suscipit sequi earum inventore perspiciatis soluta labore quam fuga voluptatum, doloremque illum ratione, expedita quis est nisi impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, non sapiente repellendus unde cum vel, enim nostrum voluptates rem explicabo ad nihil modi in voluptas, ea aliquam nulla! Ut, itaque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam rerum? Vitae eveniet dicta impedit possimus expedita autem aperiam temporibus veniam cumque quia. Voluptatem perferendis, incidunt inventore ullam reiciendis quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores temporibus neque, a aut nisi doloremque impedit animi porro vitae sequi saepe quo magnam asperiores veniam culpa incidunt repellat ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto quisquam itaque suscipit sequi earum inventore perspiciatis soluta labore quam fuga voluptatum, doloremque illum ratione, expedita quis est nisi impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, non sapiente repellendus unde cum vel, enim nostrum voluptates rem explicabo ad nihil modi in voluptas, ea aliquam nulla! Ut, itaque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam rerum? Vitae eveniet dicta impedit possimus expedita autem aperiam temporibus veniam cumque quia. Voluptatem perferendis, incidunt inventore ullam reiciendis quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores temporibus neque, a aut nisi doloremque impedit animi porro vitae sequi saepe quo magnam asperiores veniam culpa incidunt repellat ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, architecto quisquam itaque suscipit sequi earum inventore perspiciatis soluta labore quam fuga voluptatum, doloremque illum ratione, expedita quis est nisi impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, non sapiente repellendus unde cum vel, enim nostrum voluptates rem explicabo ad nihil modi in voluptas, ea aliquam nulla! Ut, itaque.</p>
 </body>
 </html>
