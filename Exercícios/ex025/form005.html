@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        legend#lulu {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="masex"> Masculino <br>
+
+            <input type="radio" name="Sexo" id="femsex"> Feminino <br>
+
+            <input type="radio" name="Sexo" id="naofaco"> Não Faço <br>
+
+            <input type="radio" name="Sexo" id="faco todo dia"> Faço Todo Dia <br>
+
+            <input type="radio" name="Sexo" id="Só depois do casamento"> Só Depois Do Casamento <br>
+
+            <legend id="lulu">Yakuzas Favoritos</legend>
+            <input type="checkbox" name="yaku0" id="iyaku0"> <label for="iyaku0">Yakuza 0</label> <br>
+            <input type="checkbox" name="yakuk1" id="iyakuk1"> <label for="iyakuk1">Yakuza Kiwami 1</label> <br>
+            <input type="checkbox" name="yakuk2" id="iyakuk2"> <label for="iyakuk2">Yakuza Kiwami 2</label> <br>
+            <input type="checkbox" name="yaku3" id="iyaku3"> <label for="iyaku3">Yakuza 3</label> <br>
+            <input type="checkbox" name="yaku4" id="iyaku4"> <label for="iyaku4">Yakuza 4</label> <br>
+            <input type="checkbox" name="yaku5" id="iyaku5"> <label for="iyaku5">Yakuza 5</label> <br>
+            <input type="checkbox" name="yaku6" id="iyaku6"> <label for="iyaku6">Yakuza 6</label> <br>
+            <input type="checkbox" name="lad" id="ilad"> <label for="ilad">Yakuza:Like a Dragon</label> <br>
+            <input type="checkbox" name="ladg" id="iladg"> <label for="iladg">Like a Dragon Gaiden:The Man Who Erased His Name</label> <br>
+            <input type="checkbox" name="ladiw" id="iladiw"> <label for="iladiw">Like a Dragon:Infinite Wealth</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
