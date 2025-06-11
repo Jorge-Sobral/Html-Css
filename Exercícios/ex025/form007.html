@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <option value="" selected>-------ESCOLHA-------</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+            <!--Tipo de input que faz aqueles formulários onde você clica e desce uma listinha-->
+        </p>
+
+        <p>
+            <label for="iprof">Yakuza Favorito</label>
+            <input type="text" name="kuza" id="ykuza" list="lst">
+            <datalist id="lst">
+                <option value="y5">Yakuza 5</option>
+                <option value="y3">Yakuza 3</option>
+                <option value="ladiw">Like a Dragon:Infinite Wealth</option>
+            </datalist>
+
+            <!--Isso é aquelas ocasiões onde pode selecionar opções prontas, mas se não tiver a que quer, pode escrever. o value é removível-->
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+            <!--Serve pro usuário escrever uma mensagem, é diferente do input text, os numeros de coluna e linhas só indica quantos vão ser mostrados, o limite é infinito. Mudar de get pra post se usar isso-->
+        </p>
+
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

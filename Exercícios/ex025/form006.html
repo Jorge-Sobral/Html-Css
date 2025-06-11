@@ -9,14 +9,21 @@
     <h1>Exemplo de Formulário</h1>
     <p>
         <label for="icor">Cor</label>
-        <input type="color" name="cor" id="icor">
+        <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
+    <!--Seletor de cor-->
+
+    <p>
+        <label for="ifoto">Foto de Perfil: </label>
+        <input type="file" name="foto" id="ifoto">
+        <!--Input pra fotos. A diferença desse pro Input Image é que nesse é o user que escolhe-->
     </p>
 
     <p>
         <label for="inivel">Nível de Satisfação?</label>
         <input type="range" name="nivel" id="inivel">
     </p>
-
+    <!--Algo Simples, simplesmente serve pra criar uma barrinha em que você arrasta a bolinha até onde quiser, pode ser usado como uma pergunta de nível de satisfação. Por padrão vai de 0 a 100 -->
      <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
